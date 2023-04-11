@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            text-align: center;
+        }
+        #exam{
+            height: 4em;
+            width: 30em;
+            font-size: 3em;
+            margin-top: 3em;
+            border: 3px red solid;
+            margin-left: 4em;
+            border-radius: 10px;
+            padding-bottom: 3px;
+        }
+        #text{
+            margin-top: 2em;
+            font-size: 3em;
+
+        }
+        .btn1{
+            width: 80px;
+            height: 70px;
+            position: relative;
+            top: -10px;
+        }
+        .btn2{
+            width: 80px;
+            height: 70px;
+            position: relative;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="text">
+    <button onclick="vis()" class="btn1">문제 입력</button>
+    <button onclick="testing()" class="btn2">제출</button>
+    <div id="exam"></div>
+    <script>
+        function vis(){
+            // (3) 0 <= random <= 9
+        rand_0_9 = Math.floor(Math.random() * 10);
+             console.log(rand_0_9);
+                if(rand_0_9 == 0){
+                    document.getElementById('exam').innerHTML="<p>to supply or make available</p>";
+                   
+                }
+                else if(rand_0_9 == 1){
+                    document.getElementById('exam').innerHTML="<p>protected from danger or harm</p>";
+                }
+                else if(rand_0_9 == 2){
+                    document.getElementById('exam').innerHTML="<p>the level of comfort and amount of money that people have</p>";
+                }
+                else if(rand_0_9 == 3){
+                    document.getElementById('exam').innerHTML="<p>to take care of someone or something</p>";
+                }
+                else if(rand_0_9 == 4){
+                    document.getElementById('exam').innerHTML="<p>tough; must be obeyed</p>";
+                }
+                else if(rand_0_9 == 5){
+                    document.getElementById('exam').innerHTML="<p>good enough; satisfactory</p>";
+                }
+                else if(rand_0_9 == 6){
+                    document.getElementById('exam').innerHTML="<p>a good choice or condition that avoids any extremes</p>";
+                }
+                else if(rand_0_9 == 7){
+                    document.getElementById('exam').innerHTML="<p>a way of living that is based on old customs</p>";
+                }
+                else if(rand_0_9 == 8){
+                    document.getElementById('exam').innerHTML="<p>a person who lives to be 100 years old or older</p>";
+                }
+                else if(rand_0_9 == 9){
+                    document.getElementById('exam').innerHTML="<p>food that has been altered from its natural state and that contains added chemicals.</p>";
+                }
+        
+
+                document.getElementById('exam').style.display="block";
+                }
+        
+        function testing(){
+            switch(rand_0_9){
+                case 0:
+                    if( document.getElementById('text').value=='provide'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 1:
+                if( document.getElementById('text').value=='secure'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 2:
+                if( document.getElementById('text').value=='standard of living'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 3:
+                if( document.getElementById('text').value=='look after'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 4:
+                if( document.getElementById('text').value=='strict'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 5:
+                if( document.getElementById('text').value=='decent'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 6:
+                if( document.getElementById('text').value=='happy medium'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 7:
+                if( document.getElementById('text').value=='traditional lifestyle'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 8:
+                if( document.getElementById('text').value=='centenarian'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+                case 9:
+                if( document.getElementById('text').value=='processed food'){
+                        alert("정답입니다!");
+                        vis();
+                        document.getElementById('text').value=null;
+
+                    }
+                    else{
+                        alert("틀렸습니다.");
+                    }
+                break;
+
+               
+            }
+    }
+    </script>
+</body>
+</html>
